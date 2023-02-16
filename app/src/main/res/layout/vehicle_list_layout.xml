@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimens_10dp"
+        android:layout_marginTop="@dimen/dimens_10dp"
+        android:elevation="@dimen/dimens_5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dimens_10dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/dimens_20sp"
+                android:id="@+id/textcolourchange"
+                android:layout_width="@dimen/dimens_0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/listofdata"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/vahiclename"
+                android:layout_width="@dimen/dimens_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimens_16dp"
+                android:gravity="center"
+                android:text="@string/vehicle_name"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/textcolourchange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="@dimen/dimens_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimens_16dp"
+                android:layout_marginTop="@dimen/dimens_10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vahiclename">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/vahicleedittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_name" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/vahicleModel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/dimens_16dp"
+                android:layout_marginTop="@dimen/dimens_5dp"
+                android:gravity="center"
+                android:text="@string/vahicle_model"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="@dimen/dimens_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimens_16dp"
+                android:layout_marginTop="@dimen/dimens_10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vahicleModel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/vahicleModelEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_model" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/vahiclecompany"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/dimens_16dp"
+                android:layout_marginTop="@dimen/dimens_5dp"
+                android:gravity="center"
+                android:text="@string/compnay_name"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text2" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="@dimen/dimens_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimens_16dp"
+                android:layout_marginTop="@dimen/dimens_10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vahiclecompany">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/vahicleCompanyEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_company" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/postionid"
+                android:layout_width="@dimen/dimens_0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/dimens_16dp"
+                android:layout_marginTop="@dimen/dimens_20dp"
+                android:gravity="center"
+                android:hint="@string/show_postion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text3" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addBtn"
+                android:layout_width="@dimen/dimens_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimens_16dp"
+                android:layout_marginTop="@dimen/dimens_10dp"
+                android:layout_marginBottom="@dimen/dimens_20dp"
+                android:background="@color/blue"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/postionid"
+                tools:ignore="VisualLintButtonSize" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
